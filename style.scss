@@ -1,3 +1,4 @@
+// 顏色
 $color-black: #252525;
 $color-black-33: #00000044;
 
@@ -8,24 +9,37 @@ $color-black-33: #00000044;
     font-family: 微軟正黑體;
 }
 
+// 身體
 body {
+    // 連結背景圖
     background-image: url(./img/tilespaper.jpg);
+    // 調整大小
     background-size: 300px;
 }
 
 nav {
+    // 格線系統
     display: grid;
     grid-template-columns: 20% 50% 15% 15%;
+    // 高度
     padding: 30px 40px;
+    // 文字對齊以下基準線
     align-items: baseline;
+    // 定位: 固定 
     position: fixed;
+    // 順序(數字越大越前面)
     z-index: 1;
+    // 背景顏色
     background: #ffffff55;
+    // 寬度
     width: 100%;
+    // 邊框
     border-bottom: 1px solid $color-black-33;
     
     #logo {
+        // 顏色
         color: $color-black;
+        // 文字大小
         font-size: 26px;
     }
     
@@ -38,10 +52,13 @@ nav {
 
 #banner {
     img {
+        // 高度
         height: 100vh;
+        // 自動滿版(高度與物件適應、讓裡面的圖片自動縮放)
         object-fit: cover;
     }
 }
+
 
 @mixin section-box {
     // 溢出：隱藏 - 超出此元素範圍外的內容皆隱藏
